@@ -1,0 +1,12 @@
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\DocumentDB.exe.config
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\DocumentDB.Spatial.Sql.dll
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\DocumentDB.exe
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\DocumentDB.pdb
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\Microsoft.Azure.Documents.Client.dll
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\Newtonsoft.Json.dll
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\Microsoft.Azure.Documents.Client.xml
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\bin\Debug\Newtonsoft.Json.xml
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\obj\Debug\DocumentDB.csprojResolveAssemblyReference.cache
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\obj\Debug\DocumentDB.exe
+c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\obj\Debug\DocumentDB.pdb
