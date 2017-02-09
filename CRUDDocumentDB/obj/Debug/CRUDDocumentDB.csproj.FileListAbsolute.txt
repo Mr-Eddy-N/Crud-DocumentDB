@@ -1,0 +1,12 @@
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\CRUDDocumentDB.exe.config
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\DocumentDB.Spatial.Sql.dll
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\CRUDDocumentDB.exe
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\CRUDDocumentDB.pdb
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\Microsoft.Azure.Documents.Client.dll
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\Newtonsoft.Json.dll
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\Microsoft.Azure.Documents.Client.xml
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\bin\Debug\Newtonsoft.Json.xml
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\obj\Debug\CRUDDocumentDB.csprojResolveAssemblyReference.cache
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\obj\Debug\CRUDDocumentDB.exe
+C:\Repositorios\CSharp\DocumentDB\CRUDDocumentDB\obj\Debug\CRUDDocumentDB.pdb

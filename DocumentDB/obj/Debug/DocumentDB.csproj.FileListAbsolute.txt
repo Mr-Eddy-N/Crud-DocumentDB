@@ -10,3 +10,15 @@ c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\b
 c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\obj\Debug\DocumentDB.csprojResolveAssemblyReference.cache
 c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\obj\Debug\DocumentDB.exe
 c:\users\l03061133\documents\visual studio 2013\Projects\DocumentDB\DocumentDB\obj\Debug\DocumentDB.pdb
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\DocumentDB.exe.config
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\obj\Debug\DocumentDB.exe
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\obj\Debug\DocumentDB.pdb
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\DocumentDB.Spatial.Sql.dll
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\DocumentDB.exe
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\DocumentDB.pdb
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\Microsoft.Azure.Documents.Client.dll
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\Newtonsoft.Json.dll
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\Microsoft.Azure.Documents.Client.xml
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\bin\Debug\Newtonsoft.Json.xml
+C:\Repositorios\CSharp\DocumentDB\DocumentDB\obj\Debug\DocumentDB.csprojResolveAssemblyReference.cache
