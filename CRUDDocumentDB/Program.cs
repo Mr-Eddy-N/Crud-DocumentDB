@@ -14,9 +14,12 @@ namespace CRUDDocumentDB
     {
         static void Main(string[] args)
         {
+            while (true) { 
             Console.WriteLine("1: Crear DB");
             Console.WriteLine("2: Eliminar DB");
             Console.WriteLine("3: Crear collecion");
+            Console.WriteLine("4: Eliminar collecion");
+            Console.WriteLine("5: Crear Documento");
             string option = Console.ReadLine();
             Program p = new Program();
             string DB = "";
@@ -41,6 +44,36 @@ namespace CRUDDocumentDB
                     Coll = Console.ReadLine();
                     p.CreateCollection(DB,Coll).Wait();
                     break;
+                case "4":
+                    Console.WriteLine("Nombre de la DB");
+                    DB = Console.ReadLine();
+                    Console.WriteLine("Nombre de la Colleccion");
+                    Coll = Console.ReadLine();
+                    p.DeleteCollection(DB, Coll).Wait();
+                    break;
+                case "5":
+                    Console.WriteLine("Nombre de la DB");
+                    DB = Console.ReadLine();
+                    Console.WriteLine("Nombre de la Colleccion");
+                    Coll = Console.ReadLine();
+                    Family fam = new Family();
+                    p.CreateDocument(DB, Coll,fam).Wait();
+                    break;
+                case "6":
+                    Console.WriteLine("Nombre de la DB");
+                    DB = Console.ReadLine();
+                    Console.WriteLine("Nombre de la Colleccion");
+                    Coll = Console.ReadLine();
+                    Family fam2 = new Family();
+                    fam2.Id = "Los Rojas";
+                    fam2.LastName = "Rojas";
+                    Parent mama= new Parent{FamilyName="Rojas",FirstName="Lore"};
+                    //fam2.Parents.
+                    //p.CreateDocument(DB, Coll, fam).Wait();
+                    break;
+
+            }
+            Console.Clear();
             }
 
         }
@@ -103,8 +136,40 @@ namespace CRUDDocumentDB
             DocumentClient client = getDocument();
             try
             {
-                await client.DeleteDatabaseAsync(UriFactory.CreateDocumentCollectionUri(DB, ID));
+               // await client.DeleteDatabaseAsync(UriFactory.CreateDocumentCollectionUri(DB, ID));
+                await client.DeleteDocumentCollectionAsync(UriFactory.CreateDocumentCollectionUri(DB, ID));
                 Console.WriteLine("Eliminada Collecion :" + ID);
+                Console.ReadKey();
+            }
+            catch (DocumentClientException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.ReadKey();
+            }
+
+        }
+
+        private async Task CreateDocument(string DB, string Coll,Family fam)
+        {
+            DocumentClient client = getDocument();
+            try
+            {
+
+                  dynamic document1Definition = new {
+                  name = "New Customer 1", address = new {
+                     addressType = "Main Office", 
+                     addressLine1 = "123 Main Street", 
+                     location = new {
+                        city = "Brooklyn", stateProvinceName = "New York" 
+                     }, postalCode = "11229", countryRegionName = "United States"
+                  }, 
+               };
+               //Family fam = new Family();
+	
+                // await client.DeleteDatabaseAsync(UriFactory.CreateDocumentCollectionUri(DB, ID));
+               //await client.ReadDocumentAsync(UriFactory.CreateDocumentUri(DB, Coll, fam.Id));
+               await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(DB,Coll),fam);
+                Console.WriteLine("Creado Documento :" + DB);
                 Console.ReadKey();
             }
             catch (DocumentClientException ex)
@@ -137,4 +202,53 @@ namespace CRUDDocumentDB
 
 
     }
-}
+    #region Clases
+
+       // ADD THIS PART TO YOUR CODE
+       public class Family
+       {
+           [JsonProperty(PropertyName = "id")]
+           public string Id { get; set; }
+           public string LastName { get; set; }
+           public Parent[] Parents { get; set; }
+           public Child[] Children { get; set; }
+           public Address Address { get; set; }
+           public bool IsRegistered { get; set; }
+           public override string ToString()
+           {
+               return JsonConvert.SerializeObject(this);
+           }
+       }
+
+
+
+
+       public class Parent
+       {
+           public string FamilyName { get; set; }
+           public string FirstName { get; set; }
+       }
+
+       public class Child
+       {
+           public string FamilyName { get; set; }
+           public string FirstName { get; set; }
+           public string Gender { get; set; }
+           public int Grade { get; set; }
+           public Pet[] Pets { get; set; }
+       }
+
+       public class Pet
+       {
+           public string GivenName { get; set; }
+       }
+
+       public class Address
+       {
+           public string State { get; set; }
+           public string County { get; set; }
+           public string City { get; set; }
+       }
+   }
+    #endregion
+
